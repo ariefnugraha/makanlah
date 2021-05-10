@@ -68,7 +68,7 @@ section.menu-1 .menu-list {
   width: 50%;
 }
 
-.menu-item-1 {
+section.menu-1 .menu-item-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,22 +78,22 @@ section.menu-1 .menu-list {
           flex-flow: row wrap;
 }
 
-.menu-item-1 div:first-child {
+section.menu-1 .menu-item-1 div:first-child {
   width: 40%;
   position: relative;
 }
 
-.menu-item-1 div:first-child h4 {
+section.menu-1 .menu-item-1 div:first-child h4 {
   -webkit-margin-after: 10px;
           margin-block-end: 10px;
 }
 
-.menu-item-1 div:first-child p {
+section.menu-1 .menu-item-1 div:first-child p {
   -webkit-margin-before: 0;
           margin-block-start: 0;
 }
 
-.menu-item-1 div:last-child {
+section.menu-1 .menu-item-1 div:last-child {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,6 +106,59 @@ section.menu-1 .menu-list {
           justify-content: flex-end;
   position: relative;
   color: #ffe066;
+}
+
+section.review-1 {
+  padding: 40px 80px;
+}
+
+section.review-1 .review-caption {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.review-1 .slider {
+  width: calc(50% - 40px);
+  margin-left: 40px;
+}
+
+section.review-1 .slider .slider-container {
+  background-color: #0f0c0d;
+  padding: 40px;
+}
+
+section.review-1 .slider .slider-container .item {
+  padding: 20px;
+  border: solid 2px #ffe066;
+}
+
+section.review-1 .slider .slider-container .item p:first-child {
+  color: #ffe066;
+  font: normal normal bold 20px/160% "Open Sans", sans-serif;
+}
+
+section.review-1 .slider .slider-container .owl-nav button {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  background-color: #ffe066;
+  border-radius: 50%;
+  color: #0b090a;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section.review-1 .slider .slider-container .owl-nav button:last-child {
+  margin-left: 10px;
+}
+
+section.review-1 .slider .slider-container .owl-dots {
+  display: none;
 }
 
 section.hero-1 .hero-image {
