@@ -6,23 +6,106 @@ body {
   font: normal normal normal 18px/160% "Open Sans", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  color: #ffe066;
+}
+
 h1 {
   font: normal normal 400 100px/125px "Courgette", serif;
-  color: #ffe066;
 }
 
 h2 {
   font: normal normal bold 50px/30px "Courgette", serif;
-  color: #ffe066;
 }
 
 h3 {
   font: normal normal bold 40px/160% "Courgette", serif;
-  color: #ffe066;
 }
 
-section.hero-1 {
+h4 {
+  font: normal normal bold 30px/160% "Courgette", serif;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+section.about {
   position: relative;
+  text-align: center;
+}
+
+section.advantage {
+  margin-top: 100px;
+}
+
+section.menu-1 {
+  margin-top: 40px;
+  padding: 40px 80px;
+  background-color: #0f0c0d;
+}
+
+section.menu-1 .menu-list {
+  width: 50%;
+}
+
+.menu-item-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.menu-item-1 div:first-child {
+  width: 40%;
+  position: relative;
+}
+
+.menu-item-1 div:first-child h4 {
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
+}
+
+.menu-item-1 div:first-child p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+.menu-item-1 div:last-child {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  color: #ffe066;
 }
 
 section.hero-1 .hero-image {
@@ -42,7 +125,7 @@ section.hero-1 .overlay {
   max-height: 781px;
   padding: 160px 0;
   background: rgba(0, 0, 0, 0.8);
-  font: normal normal normal 30px/1 60% "Open Sans", sans-serif;
+  font: normal normal normal 30px/160% "Open Sans", sans-serif;
   color: #e8e8e8;
   text-align: center;
 }
@@ -69,11 +152,6 @@ section.hero-1 .overlay a {
   color: #ffe066;
   border: solid 1px #ffe066;
   text-decoration: none;
-}
-
-section.about {
-  position: relative;
-  text-align: center;
 }
 
 section.about p {
@@ -107,19 +185,9 @@ section.about .image img:nth-child(3) {
   left: 45%;
 }
 
-section.advantage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  margin-top: 100px;
-}
-
 section.advantage .item {
   width: 50%;
+  position: relative;
 }
 
 section.advantage .item:nth-child(even) {
@@ -171,8 +239,142 @@ section.advantage .item:nth-child(2) img:nth-child(3) {
 
 section.advantage .item:nth-child(2) img:nth-child(4) {
   position: relative;
-  top: 22%;
   left: 0%;
   z-index: 3;
+}
+
+section.advantage .item:nth-child(3) {
+  position: relative;
+  top: 40px;
+}
+
+section.advantage .item:nth-child(3) img {
+  position: relative;
+}
+
+section.advantage .item:nth-child(3) img:first-child {
+  top: 25%;
+  left: 110px;
+  z-index: 1;
+}
+
+section.advantage .item:nth-child(3) img:nth-child(2) {
+  top: 20%;
+  left: 5%;
+  z-index: 3;
+}
+
+section.advantage .item:nth-child(3) img:nth-child(3) {
+  top: 0%;
+  left: 25%;
+  z-index: 2;
+}
+
+section.advantage .item:nth-child(3) img:nth-child(4) {
+  top: -65%;
+  left: -27%;
+}
+
+section.advantage .item:nth-child(3) img:nth-child(5) {
+  top: -15%;
+  left: -30%;
+}
+
+section.advantage .item:nth-child(3) img:last-child {
+  top: 0%;
+  right: -3%;
+}
+
+section.advantage .item:nth-child(4) {
+  position: relative;
+  top: 100px;
+}
+
+section.advantage .item:last-child, section.advantage .item:nth-child(5) {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.menu-1 h2 {
+  position: relative;
+  text-align: center;
+}
+
+section.menu-1 h2::before {
+  content: url("../assets/menu-ornament-1.png");
+  position: relative;
+  left: -2%;
+}
+
+section.menu-1 h2::after {
+  content: url("../assets/menu-ornament-2.png");
+  position: relative;
+  right: -2%;
+}
+
+section.menu-1 .best-picks .flex-row .item {
+  width: 25%;
+  position: relative;
+}
+
+section.menu-1 .best-picks .flex-row .item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 30px;
+  background: rgba(13, 6, 6, 0.5);
+}
+
+section.menu-1 .best-picks .flex-row .item .overlay div {
+  position: absolute;
+  bottom: 5%;
+}
+
+section.menu-1 .best-picks .flex-row .item .overlay div h4 {
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
+  font-weight: normal;
+}
+
+section.menu-1 .best-picks .flex-row .item .overlay div h4 + p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+section.menu-1 .best-picks .flex-row .item .overlay div p:last-child {
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
+  color: #ffe066;
+  font-weight: bold;
+}
+
+section.menu-1 .menu-list h4 {
+  font-weight: normal;
+}
+
+section.menu-1 .menu-list .menu-item-1 div:last-child p:before {
+  content: "";
+  display: block;
+  width: 400px;
+  border: dashed 2px #ffe066;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+section.menu-1 .menu-list:last-child {
+  width: calc(50% - 40px);
+  margin-left: 40px;
 }
 /*# sourceMappingURL=index.min.css.map */
